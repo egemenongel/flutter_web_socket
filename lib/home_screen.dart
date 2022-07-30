@@ -43,7 +43,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           height: 500,
                           child: ListView(
                               children: _textList
-                                  .map((e) => Text(e.toString()))
+                                  .map((message) => Text(message.toString()))
                                   .toList()),
                         )
                       : const Text('');
@@ -57,7 +57,7 @@ class _HomeScreenState extends State<HomeScreen> {
         onPressed: _sendMessage,
         tooltip: 'Send message',
         child: const Icon(Icons.send),
-      ), // This trailing comma makes auto-formatting nicer for build methods.
+      ),
     );
   }
 
